@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Automation Tests for SLP
 
 Programs required for being able to run tests in this repository:
@@ -29,3 +30,6 @@ Programs required for being able to run tests in this repository:
 In VSC Terminal (ctrl + `) enter following command to run tests:
 	npm run test	
 	
+=======
+Adding new json file.
+>>>>>>> 5af3da46ed95857a2e938654e39b1ee7e757d3da
