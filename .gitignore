@@ -1,0 +1,3 @@
+#prepending slash matches files only in the repository root 
+/package-lock.json
+/node_modules
