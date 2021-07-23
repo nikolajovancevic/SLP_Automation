@@ -3,7 +3,7 @@
 
 	Repository contains tests regarding Sacret Life Platform (SLP)
 	
-	ALl test are executed in stage environment: 
+	All test are executed in stage environment: 
 	https://stage.sacret-life.com
  
 	Google version 91.0.4472.164 (64-bit)
