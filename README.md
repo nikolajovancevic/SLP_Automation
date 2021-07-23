@@ -1,5 +1,5 @@
 
-Automation Tests for SLP
+<h1>Automation Tests for SLP</h1>
 
 Programs required for being able to run tests in this repository:
 
@@ -29,6 +29,8 @@ Programs required for being able to run tests in this repository:
 
 In VSC Terminal (ctrl + `) enter following command to run tests:
 	npm run test	
-	
+
+#Faker.js - node.js library that allows user to generate fake data for projects, instalation:
+	npm i faker	
 =======
 
