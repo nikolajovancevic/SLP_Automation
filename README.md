@@ -10,34 +10,35 @@
 
 <h3>Programs required for being able to run tests in this repository:</h3>
 
-#Node.js and npm, instalation:
-	sudo apt update
+#Node.js and npm, instalation: /n
+	sudo apt update /n
  	sudo apt install nodejs npm
 
-  Verify installation by executing following command:
-	node --version
-	npm --version
+  Verify installation by executing following command: /n
+	node --version /n
+	npm --version 
 
-#WebdriverIO test runner, installation:
-	npm install @wdio/cli  
-	npm wdio config		/* prompts sets of questions that guides you trough setup
+#WebdriverIO test runner, installation: /n
+	npm install @wdio/cli  /n
+	npm wdio config	/n	/* prompts sets of questions that guides you trough setup
 				  passing a '--yes' parameter will install with default op				    tions */
 
-#WebdriverIO Sync, instalation:  //helper module to run WebdriverIO commands synchronously 
+//helper module to run WebdriverIO commands synchronously /n
+#WebdriverIO Sync, instalation: /n 
 	npm -i @wdio/sync
 
   Running a test suit, execute:
-	npx wdio run ./wdio.conf.js
+	npx wdio run ./wdio.conf.js /n
 
-  Running a specific test, execute:
+  Running a specific test, execute: /n
 	npx wdio run ./wdio.conf.js --spec example.js
 
-#Visual Studio Code or any other source-code editoru
+#Visual Studio Code or any other source-code editor
 
-In VSC Terminal (ctrl + `) enter following command to run tests:
+In VSC Terminal (ctrl + ` ) enter following command to run tests: /n
 	npm run test	
 
-#Faker.js - node.js library that allows user to generate fake data for projects, instalation:
+#Faker.js - node.js library that allows user to generate fake data for projects, instalation: /n
 	npm i faker	
-=======
+
 
