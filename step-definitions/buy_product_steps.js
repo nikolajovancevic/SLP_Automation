@@ -1,5 +1,5 @@
-//Passing when executed alone
-//First test, claiming free product by clicking on it 
+
+//Claiming free product by clicking on a product 
 
 const { Given, When, Then } = require('@cucumber/cucumber');
 
@@ -19,7 +19,7 @@ Then(/^I should see "Purchase completed." message$/,  () => {
     return true;
 });
 
-//Second test, claiming product by hovering over it
+//Claiming a product by hovering over it  
 
 When(/^I hover over the product$/,  () => {
     return true;
@@ -29,9 +29,9 @@ Then(/^I should see pop-up window$/, () => {
     return true;
 });
 
-Then(/^I click "Claim product" button$/,  () => {
-    return true;
-});
+/*clicking on "Claim product" button step is contained withing 
+  buy_product_visitor_steps.js file
+*/
 
 Then(/^I should see "Purchase complete." message$/,  () => {
     return true;

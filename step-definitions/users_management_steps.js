@@ -1,4 +1,4 @@
-//Passed
+//As Admin, confirm particular users Club request
 
 const { Given, When, Then } = require('@cucumber/cucumber');
 

@@ -1,4 +1,4 @@
-//Passed
+//Performing a search without input 
 
 const { Given, When, Then } = require('@cucumber/cucumber');
 

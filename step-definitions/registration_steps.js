@@ -1,4 +1,4 @@
-//getting skiped
+//Registering as new user
 
 const { Given, When, Then } = require('@cucumber/cucumber');
 

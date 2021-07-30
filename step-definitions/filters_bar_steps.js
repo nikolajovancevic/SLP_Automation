@@ -1,6 +1,4 @@
-//Passed
-
-//First test, filters by price range
+//Filtering produts by prince range
 
 const { Given, When, Then } = require('@cucumber/cucumber');
 
@@ -24,7 +22,7 @@ Then (/^I should only see products in that price range$/, () => {
     return true;
 });
 
-//Second test, filters by date
+//Filtering product by date
 
 When (/^I click on "Date" option$/,  () => {
     return true;
@@ -38,7 +36,7 @@ Then (/^I should only see events before current date$/,  () => {
     return true;
 });
 
-//Third test, filters by setting date range manually
+//Filtering product by manually setting date range 
 
 When (/^I click on "Enter dates"$/,  () => {
     return true;

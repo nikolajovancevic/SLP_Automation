@@ -1,4 +1,4 @@
-//Passed
+//Applying for SLP Club membership, payment with MasterCard
 
 const { Given, When, Then } = require('@cucumber/cucumber');
 

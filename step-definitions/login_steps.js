@@ -1,4 +1,4 @@
-//Passed
+//Logging in as registered user
 
 const { Given, When, Then } = require('@cucumber/cucumber');
 

@@ -1,4 +1,4 @@
-//Passing when executed alone
+//making purchase as a visitor, non-registered user
 
 const { Given, When, Then } = require('@cucumber/cucumber');
 

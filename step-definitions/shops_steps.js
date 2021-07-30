@@ -1,4 +1,4 @@
-//Passed
+//Logged in to SLP, subscribing to a particular shop
 
 const { Given, When, Then } = require('@cucumber/cucumber');
 
