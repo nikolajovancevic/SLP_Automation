@@ -1,9 +1,10 @@
 //Logging in as registered user
 
 const { Given, When, Then } = require('@cucumber/cucumber');
+const LoginPage = require('../pages/login_page');
 
 Given(/^I am on the login page$/,  () => {
-    return true;
+    LoginPage.clickOnLoginHeader();
 });
 
 When(/^I login with username and password$/, () => {

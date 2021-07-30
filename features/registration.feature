@@ -1,6 +1,9 @@
+ #Registration feature
+
 Feature: Registration
 
-	Scenarion: Successfully register as a new user
+	#Registering a new user, using valid data
+	Scenario: Successfully register as a new user
 		Given I am on registration page
 		Then I register with registration data
 		Then I should see message "Please check your email for account verification"
