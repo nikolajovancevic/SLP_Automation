@@ -2,21 +2,31 @@
 //Claiming free product by clicking on a product 
 
 const { Given, When, Then } = require('@cucumber/cucumber');
+const BuyProduct = require('../pages/buy_product');
+const LoginPage = require('../pages/login_page');
+const data = require('../config/data');
 
+Given(/^I am logged in as user$/,  () => {
+    LoginPage.openLink();
+    LoginPage.clickOnLoginHeader();
+    LoginPage.insertEmail(data.emailAddress);
+    LoginPage.insertPassword(data.password);
+    LoginPage.clickOnLoginButton();
+});
 Given(/^I am on e-courses page$/,  () => {
-    return true;
+    BuyProduct.getOnECoursesPage();
 });
 
 When(/^I click on any free e-course$/,  () => {
-    return true;
+    BuyProduct.selectCourse();
 });
 
 Then(/^I click "Claim E-course" button$/, () => {
-    return true;
+    BuyProduct.claimCourse();
 });
 
 Then(/^I should see "Purchase completed." message$/,  () => {
-    return true;
+    BuyProduc.purchase_confirmation_message();
 });
 
 //Claiming a product by hovering over it  

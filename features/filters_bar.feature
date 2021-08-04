@@ -3,6 +3,7 @@
 Feature: Filters bar
 
 	Background: User is on all events page 
+		Given I am logged in as user
 		Given I am on all events page
 
 	#Filtering produts by prince range

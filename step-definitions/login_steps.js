@@ -2,16 +2,18 @@
 
 const { Given, When, Then } = require('@cucumber/cucumber');
 const LoginPage = require('../pages/login_page');
+const data = require('../config/data');
 
 Given(/^I am on the login page$/,  () => {
+    LoginPage.openLink();
     LoginPage.clickOnLoginHeader();
 });
-
 When(/^I login with username and password$/, () => {
-    return true;
+    LoginPage.insertEmail(data.emailAddress);
+    LoginPage.insertPassword(data.password);
+    LoginPage.clickOnLoginButton();
 });
-
 Then(/^I should be logged in$/,  () => {
-    return true;
+    LoginPage.partnerOptionAvailable();
 });
 

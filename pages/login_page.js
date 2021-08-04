@@ -1,20 +1,43 @@
+
+
+
 class LoginPage {
 
-get login_header(){return $('')};
-get email_field(){return $('')};
-get password_field(){return $('')};
-get login_button(){return $('')};
-get partner_option(){return $('')};
+    get login_header(){return $('//a [@class="toggle-color"]')};
+    get email_field(){return $('//input [@id="email"]')};
+    get password_field(){return $('//input [@id="password"]')};
+    get login_button(){return $('//button [@id="log-in"]')};
+    get partner_option(){return $('//li [@id="test-partner"] /a')};
+    get become_partner_option(){return $('//img [@alt="Become a partner"] ')};
 
-clickOnLoginHeader() {
-    this.login_header.click()
+    clickOnLoginHeader(){
+        this.login_header.click();
+    }
+    insertEmail(email){
+        this.email_field.addValue(email);
+    }
+    insertPassword(pass){
+        this.password_field.addValue(pass);
+    }
+    clickOnLoginButton(){
+        this.login_button.click();
+    }
+    partnerOptionAvailable() {
+        this.partner_option.click()
+        console.log(this.become_partner_option.getProperty('Become a partner'));
+    
+        //const partner = this.partner_option.getProperty('Partner');
+        //console.log(partner);
+
+        
+        //const partner = this.partner_option.getAttribute('title');
+        //console.log(partner);
+        //console.log(this.partner_option.isClickable()) ;   
+    }
+    
+    openLink(){
+        browser.url('/');
+    }
 }
-clickOnLoginHeader() {
-    this.login_header.click()
-}
-
-
-}
-
 
 module.exports = new LoginPage()

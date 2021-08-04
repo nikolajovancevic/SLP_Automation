@@ -3,6 +3,7 @@
 Feature: Claim/Buy products
 
 	Background: User on e-courses page
+		Given I am logged in as user
 		Given I am on e-courses page
 
 	#Claiming any free product available
