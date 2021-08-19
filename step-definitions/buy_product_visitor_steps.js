@@ -1,21 +1,25 @@
 //making purchase as a visitor, non-registered user
 
 const { Given, When, Then } = require('@cucumber/cucumber');
-const BuyProductVisitor = require('../pages/buy_product_visitor');
+const Url = require('../config/url');
+const AllEvents = require('../pages/all_events');
+const SelectProduct = require('../pages/select_product');
+const ClaimProduct = require('../pages/claim_product');
 
 Given(/^I am on all events page as visitor$/,  () => {
-    BuyProductVisitor.eventsMenu();
-    BuyProductVisitor.getOnAllEventsPage();
+    Url.openLink();
+    AllEvents.eventsMenu();
+    AllEvents.allEventsOption();
 });
 
-Then(/^I select "I love cars and boats" event$/,  () => {
-    BuyProductVisitor.selectEvent();
+Then(/^I select event$/,  () => {
+    SelectProduct.selectEvent();
 });
 
 When(/^I click "Claim product" button$/, () => {
-    BuyProductVisitor.claim_product();
+    ClaimProduct.claimFreeProduct();
 });
 
 Then(/^I should be relocated to SLP registration page$/,  () => {
-    BuyProductVisitor.newURL();
+    Url.checkURL();
 });

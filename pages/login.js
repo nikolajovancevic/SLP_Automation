@@ -9,8 +9,8 @@ class LoginPage {
     get email_field(){return $('//input [@id="email"]')};
     get password_field(){return $('//input [@id="password"]')};
     get login_button(){return $('//button [@id="log-in"]')};
-    get partner_option(){return $('//li [@id="test-partner"] /a')};
-    get become_partner_option(){return $('//img [@alt="Become a partner"] ')};
+    get partner_option(){return $('//a [@title="Partner"]')};
+    get become_partner_option(){return $('//img [@alt="Become a partner"]')};
 
 //methods
 
@@ -27,11 +27,8 @@ class LoginPage {
         this.login_button.click();
     }
     partnerOptionAvailable() {
-        this.partner_option.click()
-        console.log(this.become_partner_option.getProperty('Become a partner'));  
-    }
-    openLink(){
-        browser.url('/');
+        const partner = this.become_partner_option.getText();
+        strictEqual(partner, 'Become a partner')  
     }
 }
 
