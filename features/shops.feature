@@ -7,7 +7,7 @@ Feature: Shops
 
 	#Logged to SLP, Subscribe to a particular shop
 	Scenario: Subscribe to a shop
-		When I click on "All About Crypto" shop
+		When I click on shop
 		Then I am relocated to shops page
 		Then I enter my email into "Your email address" field
 		Then I click "Subscribe" button 						

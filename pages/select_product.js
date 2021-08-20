@@ -13,5 +13,9 @@ class SelectProduct {
     selectEvent(){
         this.select_event.click();
     }
+    hoverProductToBuy(){
+        this.select_e_course.elementHover();
+    }
+
 }
 module.exports = new SelectProduct()

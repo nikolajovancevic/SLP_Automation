@@ -12,6 +12,10 @@ class Url {
         browser.url('https://stage.sacret-life.com/en/registration');
         expect(browser).toHaveUrlContaining('registration');
     }
+    checkShopURL(){
+        const url = this.browser.getUrl();
+        expect(url).toHaveUrlContaining('shop');
+    }
 }
 
 module.exports = new Url()

@@ -5,7 +5,9 @@ class ClaimProduct {
     get claim_free_product(){return $('//button [@class="btn-purple claim-free-product"]')};
     get buy_product(){return $('//button [@class="add-to-bucket btn-purple"]')};
     get add_to_chart(){return $('//a [@class="btn-purple product__prices-scroll"]')};
-    
+    get hover_claim_product(){return $('//a [@id="claim-free-product"]')};
+    get hover_add_to_bucket(){return $('//a [@id="add-to-bucket"]')};
+
 //method
 
     claimFreeProduct(){
@@ -16,6 +18,12 @@ class ClaimProduct {
     }
     addToChart(){
         this.add_to_chart.click();
+    }
+    hoverToClaimProduct(){
+        this.hover_claim_product.click();
+    }
+    hoverAddToBucket(){
+        this.hover_add_to_bucket.click();
     }
 }
 

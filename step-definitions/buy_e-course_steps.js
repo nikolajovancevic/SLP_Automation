@@ -36,12 +36,9 @@ Then(/^I should see "Purchase completed." message$/, () => {
 
 //Claiming a product by hovering over it  
 
-When(/^I hover over the product$/, () => {
-    return true;
-});
-
-Then(/^I should see pop-up window$/, () => {
-    return true;
+When(/^I hover over the product and claim it/, () => {
+    SelectProduct.hoverProductToBuy();
+    ClaimProduct.hoverToClaimProduct();
 });
 
 /*clicking on "Claim product" button step is contained withing 
@@ -49,6 +46,6 @@ Then(/^I should see pop-up window$/, () => {
 */
 
 Then(/^I should see "Purchase complete." message$/, () => {
-    return true;
+    PurchaseCompleted.purchaseCompleted();
 });
 

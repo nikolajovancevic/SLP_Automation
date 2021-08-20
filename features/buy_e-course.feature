@@ -15,8 +15,7 @@ Feature: Claim/Buy products
 	#Claiming any free product available by hovering over it 
 	#"Claim product" step is contained withing buy_product_visitor.feature file
 	Scenario: Claim free product by hovering over it 
-		When I hover over the product
-		Then I should see pop-up window
+		When I hover over the product and claim it
 		Then I should see "Purchase complete." message 
 		
 
