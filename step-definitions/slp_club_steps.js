@@ -1,7 +1,7 @@
 //Applying for SLP Club membership, payment with MasterCard
 
 const { Given, When, Then } = require('@cucumber/cucumber');
-const Url = require('../config/url');
+const Url = require('../pages/url');
 const data = require('../config/data');
 const LoginPage = require('../pages/login');
 const SLClub = require('../pages/sl_club');

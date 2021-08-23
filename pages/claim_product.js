@@ -11,6 +11,7 @@ class ClaimProduct {
 //method
 
     claimFreeProduct(){
+        this.claim_free_product.waitForDisplay(30000);
         this.claim_free_product.click();
     }
     buyProduct(){
@@ -19,7 +20,7 @@ class ClaimProduct {
     addToChart(){
         this.add_to_chart.click();
     }
-    hoverToClaimProduct(){
+    hoverTolaimProduct(){
         this.hover_claim_product.click();
     }
     hoverAddToBucket(){

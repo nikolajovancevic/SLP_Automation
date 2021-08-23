@@ -1,7 +1,7 @@
 //Logged in to SLP, subscribing to a particular shop
 
 const { Given, When, Then } = require('@cucumber/cucumber');
-const Url = require('../config/url');
+const Url = require('../pages/url');
 const data = require('../config/data');
 const LoginPage = require('../pages/login');
 const Shop = require('../pages/shop');

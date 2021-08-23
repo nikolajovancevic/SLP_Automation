@@ -9,7 +9,7 @@ class Url {
 //check if browser is on a specific page
 
     checkURL(){
-        browser.url('https://stage.sacret-life.com/en/registration');
+        browser.url(registration);
         expect(browser).toHaveUrlContaining('registration');
     }
     checkShopURL(){

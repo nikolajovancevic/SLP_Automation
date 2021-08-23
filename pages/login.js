@@ -1,7 +1,6 @@
+const BasePage = require("./basePage");
 
-
-
-class LoginPage {
+class LoginPage extends BasePage {
 
 //selectors
 
@@ -15,16 +14,17 @@ class LoginPage {
 //methods
 
     clickOnLoginHeader(){
-        this.login_header.click();
+        this.login_header.waitForDisplayed();
+        if(this.login_header.isDisplayed()){
+            this.click(this.login_header);
+        }
     }
-    insertEmail(email){
-        this.email_field.addValue(email);
-    }
-    insertPassword(pass){
-        this.password_field.addValue(pass);
+    insertEmailAndPass(email, pass){
+        this.setValue(this.email_field, email);
+        this.setValue(this.password_field, pass);
     }
     clickOnLoginButton(){
-        this.login_button.click();
+        this.click(this.login_button);
     }
     partnerOptionAvailable() {
         const partner = this.become_partner_option.getText();

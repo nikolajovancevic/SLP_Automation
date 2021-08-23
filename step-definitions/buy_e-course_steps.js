@@ -2,7 +2,7 @@
 //buying e-course
 
 const { Given, When, Then } = require('@cucumber/cucumber');\
-const Url = require('../config/url');
+const Url = require('../pages/url);
 const data = require('../config/data');
 const LoginPage = require('../pages/login');
 const ECourses = require('../pages/e_courses');
