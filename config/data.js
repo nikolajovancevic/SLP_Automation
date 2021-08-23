@@ -14,8 +14,8 @@ module.exports = {
     country: 'Serbia',
     contactPhone: '12341344',
 
-//urls
+//checking urls
 
-    registrationPage: 'https://stage.sacret-life.com/en/registration',
-    shopsPage: 'https://stage.sacret-life.com/shops'
+    registrationPage: 'registration',
+    shopsPage: 'shop'
 }

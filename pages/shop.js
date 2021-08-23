@@ -1,4 +1,8 @@
-class Shop {
+//SLP shops page
+
+const BasePage = require("./basePage");
+
+class Shop extends BasePage {
 
 //selectors
 
@@ -10,16 +14,16 @@ class Shop {
 //methods
 
     shopsPage(){
-        this.shops_page.click();
+        this.click(this.shops_page);
     }
     selectShop(){
-        this.select_shop.click();
+        this.click(this.select_shop);
     }
-    shopEmailField(){
-        this.shop_email_field.addValue(email);
+    shopEmailField(email){
+        this.setValue(this.shop_email_field, email);
     }
     shopSubscribeButton(){
-        this.shop_subscribe_button.click();
+        this.click(this.shop_subscribe_button);
     }
 }
 

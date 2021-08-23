@@ -1,14 +1,14 @@
 
 //buying e-course
 
-const { Given, When, Then } = require('@cucumber/cucumber');\
-const Url = require('../pages/url);
+const { Given, When, Then } = require('@cucumber/cucumber');
+const Url = require('../pages/url');
 const data = require('../config/data');
 const LoginPage = require('../pages/login');
 const ECourses = require('../pages/e_courses');
 const SelectProduct = require('../pages/select_product');
-const ClaimProduct = require('../pages/claim_product')
-const PurchaseCompleted = require('../pages/purchase_completed')
+const ClaimProduct = require('../pages/claim_product');
+const PurchaseCompleted = require('../pages/purchase_completed');
 
 Given(/^I am logged in as user$/, () => {
     Url.openLink();

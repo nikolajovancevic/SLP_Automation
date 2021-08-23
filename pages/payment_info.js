@@ -1,5 +1,8 @@
+//payment info, when puchasing product
 
-class PaymentInfo {
+const BasePage = require("./basePage")
+
+class PaymentInfo extends BasePage {
 
 //selectors
 

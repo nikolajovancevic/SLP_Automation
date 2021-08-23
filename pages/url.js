@@ -1,4 +1,8 @@
-class Url {
+//urls
+
+const BasePage = require("./basePage");
+
+class Url extends BasePage {
 
 //opens SLP page
 
@@ -8,13 +12,9 @@ class Url {
 
 //check if browser is on a specific page
 
-    checkURL(){
-        browser.url(registration);
-        expect(browser).toHaveUrlContaining('registration');
-    }
-    checkShopURL(){
+    checkURLParmeter(urlParam){
         const url = this.browser.getUrl();
-        expect(url).toHaveUrlContaining('shop');
+        expect(url).toHaveUrlContaining(urlParam);
     }
 }
 

@@ -1,4 +1,8 @@
-class ECourses {
+//navigating to e-courses page
+
+const BasePage = require("./basePage");
+
+class ECourses extends BasePage {
 
 //selectors
 
@@ -8,10 +12,10 @@ class ECourses {
 //methods
 
     videosMenu(){
-        this.videos_menu.click();
+        this.click(this.videos_menu);
     }
     eCourses(){
-        this.e_courses.click();
+        this.click(this.e_courses);
     }
 }
 

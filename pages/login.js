@@ -1,3 +1,5 @@
+//logging in to SLP 
+
 const BasePage = require("./basePage");
 const { strictEqual } = require('assert');
 
@@ -29,7 +31,7 @@ class LoginPage extends BasePage {
     }
     partnerOptionAvailable() {
         const partner = this.getText(this.become_partner_option);
-        strictEqual(partner, 'Become a partner')  
+        strictEqual(partner, 'Become a partner');
     }
 }
 

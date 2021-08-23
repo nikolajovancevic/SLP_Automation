@@ -1,4 +1,8 @@
-class ClaimProduct {
+//different buttons for pucrhase or adding to chart
+
+const BasePage = require("./basePage")
+
+class ClaimProduct extends BasePage {
 
 //selectors
 
@@ -11,20 +15,19 @@ class ClaimProduct {
 //method
 
     claimFreeProduct(){
-        this.claim_free_product.waitForDisplay(30000);
-        this.claim_free_product.click();
+        this.click(this.claim_free_product);
     }
     buyProduct(){
-        this.buy_product.click();
+        this.click(this.buy_product);
     }
     addToChart(){
-        this.add_to_chart.click();
+        this.click(this.add_to_chart);
     }
-    hoverTolaimProduct(){
-        this.hover_claim_product.click();
+    hoverToClaimProduct(){
+        this.click(this.hover_claim_product);
     }
     hoverAddToBucket(){
-        this.hover_add_to_bucket.click();
+        this.click(this.hover_add_to_bucket);
     }
 }
 

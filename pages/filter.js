@@ -1,4 +1,8 @@
-class Filter{
+//filters bar
+
+const BasePage = require("./basePage");
+
+class Filter extends BasePage{
 
 //selectors
 

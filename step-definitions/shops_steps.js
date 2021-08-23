@@ -21,12 +21,11 @@ When(/^I click on shop$/, () => {
 });
 
 Then(/^I am relocated to shops page$/, () => {
-    Url.checkShopURL();
+    Url.checkURLParmeter(data.shopsPage);
 });
 
 Then(/^I enter my email into "Your email address" field$/,  () => {
-    Shop.shopEmailField();
-    LoginPage.insertEmail(data.emailAddress);
+    Shop.shopEmailField(data.emailAddress);
 });
 
 Then(/^I click "Subscribe" button$/, () => {

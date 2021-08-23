@@ -1,4 +1,9 @@
-class PurchaseCompleted {
+//affirmation message when successful purchase is made
+
+const BasePage = require("./basePage");
+const { strictEqual } = require('assert');
+
+class PurchaseCompleted extends BasePage {
 
 //selectors
 
@@ -7,8 +12,9 @@ class PurchaseCompleted {
 //methods
 
     purchaseCompleted(){
-        const purchase = this.affirmation_message.getText();
-        strictEqual(purchase, 'Purchase completed.')
+        const purchase = this.getText(this.affirmation_message);
+        strictEqual(purchase, 'Purchase completed.');
+        //strictEqual(this.getText(this.affirmation_message), 'Purchase completed.'));
     }
 }
 

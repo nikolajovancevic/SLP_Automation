@@ -1,4 +1,8 @@
-class SLClub {
+//Applying for SL Club membership
+
+const BasePage = require("./basePage");
+
+class SLClub extends BasePage{
 
 //selectors
     get sl_club_page(){return $('//a [@href="/sacret-life-club"]')};
@@ -7,10 +11,10 @@ class SLClub {
 //methods
 
     slClubPage(){
-        this.sl_club_page.click();
+        this.click(this.sl_club_page);
     }
     applyForMembership(){
-        this.apply_for_membership.click();
+        this.click(this.apply_for_membership);
     }
 }
 

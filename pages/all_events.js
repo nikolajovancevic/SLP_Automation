@@ -1,4 +1,8 @@
-class AllEvents {
+//navigating to all events page
+
+const BasePage = require("./basePage");
+
+class AllEvents extends BasePage {
 
 //selectors
 
@@ -8,10 +12,10 @@ class AllEvents {
 //methods
 
     eventsMenu(){
-        this.events_menu.click();
+        this.click(this.events_menu);
     }
     allEventsOption(){
-        this.all_events_option.click();
+        this.click(this.all_events_option);
     }
 }
 
