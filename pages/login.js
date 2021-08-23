@@ -1,4 +1,5 @@
 const BasePage = require("./basePage");
+const { strictEqual } = require('assert');
 
 class LoginPage extends BasePage {
 
@@ -27,7 +28,7 @@ class LoginPage extends BasePage {
         this.click(this.login_button);
     }
     partnerOptionAvailable() {
-        const partner = this.become_partner_option.getText();
+        const partner = this.getText(this.become_partner_option);
         strictEqual(partner, 'Become a partner')  
     }
 }
