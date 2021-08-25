@@ -28,7 +28,7 @@ class ClaimProduct extends BasePage {
         this.click(this.hover_claim_product);
     }
     hoverAddToBucket(){
-        this.hover_add_to_bucket.moveTo({});
+        this.hover_add_to_bucket.moveTo();
         this.click(this.hover_add_to_bucket);
     }
 }
