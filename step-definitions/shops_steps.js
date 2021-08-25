@@ -2,7 +2,6 @@
 
 const { Given, When, Then } = require('@cucumber/cucumber');
 const Url = require('../pages/url');
-const data = require('../config/data');
 const LoginPage = require('../pages/login');
 const Shop = require('../pages/shop');
 const data = require('../config/data');

@@ -13,8 +13,7 @@ const PurchaseCompleted = require('../pages/purchase_completed');
 Given(/^I am logged in as user$/, () => {
     Url.openLink();
     LoginPage.clickOnLoginHeader();
-    LoginPage.insertEmail(data.emailAddress);
-    LoginPage.insertPassword(data.password);
+    LoginPage.insertEmailAndPass(data.emailAddress, data.password);
     LoginPage.clickOnLoginButton();
 });
 Given(/^I am on e-courses page$/, () => {
@@ -23,7 +22,7 @@ Given(/^I am on e-courses page$/, () => {
 });
 
 When(/^I click on any free e-course$/, () => {
-    SelectProduct.selectECouse();
+    SelectProduct.selectECourse();
 });
 
 Then(/^I click "Claim E-course" button$/, () => {

@@ -1,7 +1,7 @@
 //Filtering produts by prince range
 
 const { Given, When, Then } = require('@cucumber/cucumber');
-const Url = require('../config/url');
+const Url = require('../pages/url');
 const AllEvents = require('../pages/all_events');
 
 Given (/^I am on all events page$/,  () => {
