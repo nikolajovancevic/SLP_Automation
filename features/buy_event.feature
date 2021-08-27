@@ -9,4 +9,4 @@ Feature: Buying an event
 		When I click on any free event
 		Then I click "Claim product" button
 		Then I should see "Purchase completed." message
-		Then I logout
+		
