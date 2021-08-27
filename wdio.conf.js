@@ -24,7 +24,7 @@ exports.config = {
     // will be called from there.
     //
     specs: [
-        './features/buy_e-course.feature'
+        './features/buy_event.feature'
     ],
     // Patterns to exclude.
     exclude: [

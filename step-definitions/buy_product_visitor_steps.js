@@ -3,23 +3,6 @@
 const { Given, When, Then } = require('@cucumber/cucumber');
 const data = require ('../config/data');
 const Url = require('../pages/url');
-const AllEvents = require('../pages/all_events');
-const SelectProduct = require('../pages/select_product');
-const ClaimProduct = require('../pages/claim_product');
-
-Given(/^I am on all events page as visitor$/,  () => {
-    Url.openLink();
-    AllEvents.eventsMenu();
-    AllEvents.allEventsOption();
-});
-
-Then(/^I select event$/,  () => {
-    SelectProduct.selectEvent();
-});
-
-When(/^I click "Claim product" button$/, () => {
-    ClaimProduct.claimFreeProduct();
-});
 
 Then(/^I should be relocated to SLP registration page$/,  () => {
     Url.checkURLParmeter(data.registrationPage);

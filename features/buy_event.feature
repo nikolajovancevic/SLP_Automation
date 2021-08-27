@@ -1,6 +1,6 @@
 Feature: Buying an event 
 
-	Background: User on e-courses page
+	Background: User on events page
 		Given I am logged in as user
 		Given I am on all events page
 
@@ -9,4 +9,4 @@ Feature: Buying an event
 		When I click on any free event
 		Then I click "Claim product" button
 		Then I should see "Purchase completed." message
-		
+		Then I logout
