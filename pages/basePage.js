@@ -15,4 +15,5 @@ module.exports = class BasePage {
         const text = element.getText();
         return text;
     }
+    
 }

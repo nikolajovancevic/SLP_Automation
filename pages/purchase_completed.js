@@ -14,7 +14,7 @@ class PurchaseCompleted extends BasePage {
     purchaseCompleted(){
         const purchase = this.getText(this.affirmation_message);
         strictEqual(purchase, 'Purchase completed.');
-        //strictEqual(this.getText(this.affirmation_message), 'Purchase completed.'));
+        browser.pause(3000);
     }
 }
 

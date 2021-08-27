@@ -11,6 +11,7 @@ Feature: Claim/Buy products
 		When I click on any free e-course
 		Then I click "Claim E-course" button
 		Then I should see "Purchase completed." message
+		Then I logout
 
 	#Claiming any free product available by hovering over it 
 	#"Claim product" step is contained withing buy_product_visitor.feature file

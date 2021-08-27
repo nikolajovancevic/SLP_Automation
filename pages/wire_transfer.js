@@ -1,1 +1,0 @@
-//wire transfer payment option box

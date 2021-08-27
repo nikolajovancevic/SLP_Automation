@@ -13,6 +13,7 @@ const ECourses = require('../pages/e_courses');
 const SelectProduct = require('../pages/select_product');
 const ClaimProduct = require('../pages/claim_product');
 const PurchaseCompleted = require('../pages/purchase_completed');
+const Logout = require ('../pages/logout');
 
 Given(/^I am logged in as user$/, () => {
     Url.openLink();
@@ -36,6 +37,11 @@ Then(/^I click "Claim E-course" button$/, () => {
 
 Then(/^I should see "Purchase completed." message$/, () => {
     PurchaseCompleted.purchaseCompleted();
+});
+
+Then(/^I logout$/, () => {
+    Logout.usersIcon();
+    Logout.logoutButton();
 });
 
 //Claiming a product by hovering over it  
